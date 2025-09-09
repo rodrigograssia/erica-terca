@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Editor de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="editor-container">
+        <div class="toolbar">
+            <button id="undo" onclick="undoAction()">Desfazer</button>
+            <button id="redo" onclick="redoAction()">Refazer</button>
+        </div>
+        <div contenteditable="true" class="editor" id="editor"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

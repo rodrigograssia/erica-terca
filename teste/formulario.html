@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+
+<body>
+    <form>
+        <h2>Formulário</h2>
+        <label for="email">Email:</label>
+        <input type="email" name="email_usuario" id="email_usuario" required>
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" required>
+        <label for="editor">Adicione um comentário abaixo:</label>
+        <textarea name="comentário" id="editor"></textarea>
+        <input type="submit" value="Confirmar">
+        <div class="editor-container">
+            <div class="toolbar">
+                <button type="button" id="undo" onclick="undoAction()">Desfazer</button>
+                <button type="button" id="redo" onclick="redoAction()">Refazer</button>
+            </div>
+        </div>
+    </form>
+
+</body>
+<script src="js/formulario.js"></script>
+
+</html>
